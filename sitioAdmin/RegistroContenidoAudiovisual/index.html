@@ -1,0 +1,88 @@
+<script src="RegistroContenidoAudiovisual/js/index.js"></script>
+<div class="container-fluid">
+  <div class="row ">
+    <div class="col">
+      <h5>Registro de contenido audiovisual</h5>
+    </div>
+  </div>
+  <div class="container">
+    <div class="col-md-6">
+      <div id="nombreModificado" class="alert alert-secondary" role="alert">Contenido nuevo</div>
+      <form class="form">
+        <fieldset>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label class=" control-label" for="txtTitulo"><b>Título</b></label>
+                <div>
+                  <input id="txtTitulo" name="txtTitulo" type="text" placeholder="Título para la cabecera del post"
+                    class="form-control form-control-sm" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class=" control-label" for="txtUrl"><b>URL</b></label>
+                <div>
+                  <input id="txtUrl" name="txtUrl" type="text" placeholder="Url del video (Youtube)"
+                    class="form-control form-control-sm" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class=" control-label" for="txtPor"><b>Por:</b></label>
+                <div>
+                  <input id="txtPor" name="txtPor" type="text"
+                    placeholder="Nombre del autor o quien aparece en el video" class="form-control form-control-sm"
+                    required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class=" control-label" for="cboTipo"><b>Tipo de contenido:</b></label>
+                <div>
+                  <select id="cboTipo" class="form-select form-select-sm"></select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class=" control-label" for="txtFecha"><b>Fecha:</b></label>
+                <div>
+                  <input id="txtFecha" name="txtFecha" type="date"
+                    placeholder="Nombre del autor o quien aparece en el video" class="form-control form-control-sm"
+                    required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class=" control-label" for="txtHora"><b>Hora:</b></label>
+                <div>
+                  <input id="txtHora" name="txtHora" type="time"
+                    placeholder="Nombre del autor o quien aparece en el video" class="form-control form-control-sm"
+                    required>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Button -->
+          <br><br>
+          <div class="form-group">
+            <div class="col-md-12">
+              <button id="btnGuardar" name="btnGuardar" class="btn btn-secondary" type="button">Guardar</button>
+              <button id="btnCancelar" name="btnCancelar" class="btn btn-light" type="button">Cancelar</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <br>
+    <div class="col-md-6">
+      <hr>
+      <h6>
+        <span class="badge bg-secondary">Puede presionar CTRL + F para buscar</span>
+      </h6>
+      <div class="container">
+
+        <div class="row row-cols-1 lista_container" id="listaElementos"></div>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>

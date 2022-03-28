@@ -1,0 +1,58 @@
+<script src="CatContenidoAudiovisual/js/index.js"></script>
+<div class="container-fluid">
+  <div class="row ">
+    <div class="col">
+      <h5>Catálogo de contenido audiovisual</h5>
+    </div>
+  </div>
+  <div class="container">
+<div class="col-md-6">
+      <div id="nombreModificado" class="alert alert-secondary" role="alert">Etiqueta nueva</div>
+      <form class="form">
+        <fieldset>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label class=" control-label" for="txtNombre"><b>Nombre</b></label>
+                <div>
+                  <input id="txtNombre" name="txtNombre" type="text" placeholder="Requerido"
+                    class="form-control form-control-sm" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class=" control-label" for="txtDescripcion"><b>Descripción</b></label>
+                <div>
+                  <input id="txtDescripcion" name="txtDescripcion" type="text" placeholder="Requerido"
+                    class="form-control form-control-sm" required>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Button -->
+          <br>
+          <div class="form-group">
+            <div class="col-md-12">
+              <button id="btnGuardar" name="btnGuardar" class="btn btn-secondary" type="button">Guardar</button>
+              <button id="btnCancelar" name="btnCancelar" class="btn btn-light" type="button">Cancelar</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <br>
+    
+    <div class="col-md-6">
+      <hr>
+      <h6>
+        <span class="badge bg-secondary">Puede presionar CTRL + F para buscar</span>
+      </h6>
+      <div class="container">
+        <div class="row row-cols-1 lista_container" id="listaElementos"></div>
+      </div>
+    </div>
+
+    
+
+  </div>
+</div>

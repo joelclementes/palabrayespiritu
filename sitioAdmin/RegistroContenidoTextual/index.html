@@ -1,0 +1,84 @@
+<script src="RegistroContenidoTextual/js/index.js"></script>
+<div class="container-fluid">
+  <div class="row ">
+    <div class="col">
+      <h5>Registro de contenido textual</h5>
+    </div>
+  </div>
+  <div class="container">
+    <div class="col-md-6">
+      <div id="nombreModificado" class="alert alert-secondary" role="alert">Contenido nuevo</div>
+      <form class="form" id="agregaInformacion">
+        <fieldset>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label class=" control-label" for="txtTitulo"><b>Título</b></label>
+                <div>
+                  <input id="txtTitulo" name="txtTitulo" type="text" placeholder="Título para la cabecera del post"
+                    class="form-control form-control-sm" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class=" control-label" for="txtSubtitulo"><b>Subtítulo</b></label>
+                <div>
+                  <input id="txtSubtitulo" name="txtSubtitulo" type="text" placeholder="Opcional"
+                    class="form-control form-control-sm" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class=" control-label" for="txtTexto"><b>Contenido:</b></label>
+                <div>
+                  <textarea id="txtTexto" name="txtTexto" class="form-control form-control-sm summernote" rows="5"></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class=" control-label" for="txtPor"><b>Por:</b></label>
+                <div>
+                  <input id="txtPor" name="txtPor" type="text" placeholder="Nombre del autor"
+                    class="form-control form-control-sm" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class=" control-label" for="cboTipo"><b>Tipo de contenido:</b></label>
+                <div>
+                  <select id="cboTipo" class="form-select form-select-sm"></select>
+                </div>
+              </div>
+              <!-- <div class="form-group">
+                <label class=" control-label" for="txtImagen"><b>Imagen:</b></label>
+                <div>
+                  <input id="txtImagen" name="txtImagen" type="file" accept=".jpg" 
+                    class="form-control form-control-sm" required>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+          <!-- Button -->
+          <br>
+          <div class="form-group">
+            <div class="col-md-12">
+              <button id="btnGuardar" name="btnGuardar" class="btn btn-secondary" type="button">Guardar</button>
+              <button id="btnCancelar" name="btnCancelar" class="btn btn-light" type="button">Cancelar</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <br>
+    <div class="col-md-6">
+      <hr>
+      <h6>
+        <span class="badge bg-secondary">Puede presionar CTRL + F para buscar</span>
+      </h6>
+      <div class="container">
+
+        <div class="row row-cols-1 lista_container" id="listaElementos"></div>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
